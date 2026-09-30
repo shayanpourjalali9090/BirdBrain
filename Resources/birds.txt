@@ -1,0 +1,100 @@
+Robin
+Blackbird
+Blue Tit
+Great Tit
+Coal Tit
+House Sparrow
+Chaffinch
+Goldfinch
+Greenfinch
+Bullfinch
+Wren
+Dunnock
+Song Thrush
+Mistle Thrush
+Starling
+Collared Dove
+Woodpigeon
+Long-tailed Tit
+Nuthatch
+Great Spotted Woodpecker
+Magpie
+Eurasian Jay
+Hooded Crow
+Carrion Crow
+Rook
+Jackdaw
+Raven
+Red-billed Chough
+Red Kite
+Common Buzzard
+Peregrine Falcon
+Kestrel
+Sparrowhawk
+Golden Eagle
+Bald Eagle
+Osprey
+Harris's Hawk
+Griffon Vulture
+Barn Owl
+Tawny Owl
+Long-eared Owl
+Short-eared Owl
+Snowy Owl
+Great Horned Owl
+Mallard
+Mute Swan
+Whooper Swan
+Canada Goose
+Greylag Goose
+Moorhen
+Coot
+Grey Heron
+Little Egret
+Kingfisher
+Atlantic Puffin
+Northern Gannet
+Herring Gull
+Black-headed Gull
+Arctic Tern
+Razorbill
+Guillemot
+Fulmar
+Ostrich
+Emu
+Greater Flamingo
+Indian Peafowl
+Toco Toucan
+Scarlet Macaw
+American Robin
+Northern Cardinal
+Blue Jay
+Wild Turkey
+Sandhill Crane
+Secretary Bird
+Shoebill
+Marabou Stork
+Andean Condor
+African Grey Parrot
+Cockatiel
+Sulphur-crested Cockatoo
+Budgerigar
+Rainbow Lorikeet
+Eclectus Parrot
+Hyacinth Macaw
+Kea
+Pheasant
+Red Grouse
+Grey Partridge
+Capercaillie
+Guineafowl
+Roadrunner
+Ruby-throated Hummingbird
+Anna's Hummingbird
+Bee Hummingbird
+Superb Fairywren
+Resplendent Quetzal
+Emperor Penguin
+King Penguin
+Gentoo Penguin
+Little Penguin
