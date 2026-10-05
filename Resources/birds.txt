@@ -1,100 +1,50 @@
-Robin
-Blackbird
-Blue Tit
-Great Tit
-Coal Tit
-House Sparrow
-Chaffinch
-Goldfinch
-Greenfinch
-Bullfinch
-Wren
-Dunnock
-Song Thrush
-Mistle Thrush
-Starling
-Collared Dove
-Woodpigeon
-Long-tailed Tit
-Nuthatch
-Great Spotted Woodpecker
-Magpie
-Eurasian Jay
-Hooded Crow
-Carrion Crow
-Rook
-Jackdaw
-Raven
-Red-billed Chough
-Red Kite
-Common Buzzard
-Peregrine Falcon
-Kestrel
-Sparrowhawk
-Golden Eagle
-Bald Eagle
-Osprey
-Harris's Hawk
-Griffon Vulture
-Barn Owl
-Tawny Owl
-Long-eared Owl
-Short-eared Owl
-Snowy Owl
-Great Horned Owl
-Mallard
-Mute Swan
-Whooper Swan
-Canada Goose
-Greylag Goose
-Moorhen
-Coot
-Grey Heron
-Little Egret
-Kingfisher
-Atlantic Puffin
-Northern Gannet
-Herring Gull
-Black-headed Gull
-Arctic Tern
-Razorbill
-Guillemot
-Fulmar
-Ostrich
-Emu
-Greater Flamingo
-Indian Peafowl
-Toco Toucan
-Scarlet Macaw
-American Robin
-Northern Cardinal
-Blue Jay
-Wild Turkey
-Sandhill Crane
-Secretary Bird
-Shoebill
-Marabou Stork
-Andean Condor
-African Grey Parrot
-Cockatiel
-Sulphur-crested Cockatoo
-Budgerigar
-Rainbow Lorikeet
-Eclectus Parrot
-Hyacinth Macaw
-Kea
-Pheasant
-Red Grouse
-Grey Partridge
-Capercaillie
-Guineafowl
-Roadrunner
-Ruby-throated Hummingbird
-Anna's Hummingbird
-Bee Hummingbird
-Superb Fairywren
-Resplendent Quetzal
-Emperor Penguin
-King Penguin
-Gentoo Penguin
-Little Penguin
+Robin,Old world flycatchers,Passeriformes
+Blackbird,Thrushes,Passeriformes
+Blue Tit,Tits,Passeriformes
+Great Tit,Tits,Passeriformes
+Coal Tit,Tits,Passeriformes
+House Sparrow,Old world sparrows,Passeriformes
+Chaffinch,True finches,Passeriformes
+Goldfinch,True finches,Passeriformes
+Greenfinch,True finches,Passeriformes
+Bullfinch,True finches,Passeriformes
+Wren,Wrens,Passeriformes
+Dunnock,Accentors,Passeriformes
+Song Thrush,Thrushes,Passeriformes
+Mistle Thrush,Thrushes,Passeriformes
+Starling,Starlings,Passeriformes
+Collared Dove,Columbidae,Columbiformes
+Woodpigeon,Columbidae,Columbiformes
+Long-tailed Tit,Bushtits,Passeriformes
+Nuthatch,Nuthatches,Passeriformes
+Great Spotted Woodpecker,Woodpeckers,Piciformes
+Magpie,Corvidae,Passeriformes
+Eurasian Jay,Corvidae,Passeriformes
+Hooded Crow,Corvidae,Passeriformes
+Carrion Crow,Corvidae,Passeriformes
+Rook,Corvidae,Passeriformes
+Jackdaw,Corvidae,Passeriformes
+Raven,Corvidae,Passeriformes
+Red-billed Chough,Corvidae,Passeriformes
+Red Kite,Accipitridae,Accipitriformes
+Common Buzzard,Accipitridae,Accipitriformes
+Peregrine Falcon,Falcons,Falconiformes
+Kestrel,Falcons,Falconiformes
+Sparrowhawk,Accipitridae,Accipitriformes
+Golden Eagle,Accipitridae,Accipitriformes
+Bald Eagle,Accipitridae,Accipitriformes
+Osprey,Pandionidae,Accipitriformes
+Harris's Hawk,Accipitridae,Accipitriformes
+Griffon Vulture,Accipitridae,Accipitriformes
+Barn Owl,Tytonidae,Strigiformes
+Tawny Owl,True owls,Strigiformes
+Long-eared Owl,True owls,Strigiformes
+Short-eared Owl,True owls,Strigiformes
+Snowy Owl,True owls,Strigiformes
+Great Horned Owl,True owls,Strigiformes
+Mallard,Anatidae,Anseriformes
+Mute Swan,Anatidae,Anseriformes
+African Grey Parrot,Psittacidae,Psittaciformes
+Cockatiel,Cacatuidae,Psittaciformes
+Indian Ringneck,Psittaculidae,Psittaciformes
+Kea,New Zealand Parrots,Psittaciformes
