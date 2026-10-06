@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.io.*;
 import java.lang.reflect.Array;
 import java.util.*;
@@ -285,8 +287,6 @@ public class BirdBrain {
 
         }
 
-        System.out.printf("Current species: %s\n",current.bird.species);
-
         Image birdImage=new ImageIcon(BirdBrain.class.getResource(String.format("/images/%s",current.bird.species))).getImage();
         birdImage=birdImage.getScaledInstance(-1,300,Image.SCALE_SMOOTH);
         questionContentLabel.setIcon(new ImageIcon(birdImage));
@@ -406,6 +406,13 @@ public class BirdBrain {
     public static void main(String[] args){
         initResources();
         initUI();
-
+        frame.addKeyListener(new KeyAdapter(){
+            @Override
+            public void keyPressed(KeyEvent e){
+                if (e.getKeyCode()==KeyEvent.VK_ESCAPE){
+                    cardLayout.show(screens,"mainMenu");
+                }
+            }
+        });
     }
 }

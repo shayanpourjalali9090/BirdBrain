@@ -48,3 +48,18 @@ African Grey Parrot,Psittacidae,Psittaciformes
 Cockatiel,Cacatuidae,Psittaciformes
 Indian Ringneck,Psittaculidae,Psittaciformes
 Kea,New Zealand Parrots,Psittaciformes
+Pesquets Parrot,Psittaculidae,Psittaciformes
+Spotted Nightjar,Nightjars,Caprimulgiformes
+Spixs Macaw,Psittacidae,Psittaciformes
+Bee Hummingbird,Hummingbirds,Apodiformes
+Fiery Throated Hummingbird,Hummingbirds,Apodiformes
+Barn Swallow,Swallows,Passeriformes
+Common Swift,Swifts,Apodiformes
+King Penguin,Spheniscidae,Sphenisciformes
+Emperor Penguin,Spheniscidae,Sphenisciformes
+Pileated Flycatcher,Tyrant Flycatchers,Passeriformes
+Pileated Woodpecker,Woodpeckers,Piciformes
+Greater Roadrunner,Cuckoos,Cuculiformes
+Little Penguin,Spheniscidae,Sphenisciformes
+Rainbow Lorikeet,Psittaculidae,Psittaciformes
+Screaming Piha,Cotingas,Passeriformes
