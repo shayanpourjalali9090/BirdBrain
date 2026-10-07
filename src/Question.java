@@ -2,7 +2,8 @@ public class Question {
     QuizType quizType;
     QuestionType questionType;
     Bird bird;
-    String userAnswer;
+    String correctAnswer,userAnswer;
+    Boolean correct;
 
     public Question(QuizType quizType,QuestionType questionType, Bird bird){
         this.questionType=questionType;
@@ -15,7 +16,8 @@ public class Question {
     }
 
     public boolean mark(){
-        String answer=quizType==QuizType.FAMILY?bird.family:quizType==QuizType.ORDER?bird.order:bird.species;
-        return userAnswer.equalsIgnoreCase(answer);
+        correctAnswer=quizType==QuizType.FAMILY?bird.family:quizType==QuizType.ORDER?bird.order:bird.species;
+        correct=userAnswer.equalsIgnoreCase(correctAnswer);
+        return correct;
     }
 }

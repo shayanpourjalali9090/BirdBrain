@@ -8,11 +8,10 @@ Chaffinch,True finches,Passeriformes
 Goldfinch,True finches,Passeriformes
 Greenfinch,True finches,Passeriformes
 Bullfinch,True finches,Passeriformes
-Wren,Wrens,Passeriformes
+Eurasian Wren,Wrens,Passeriformes
 Dunnock,Accentors,Passeriformes
 Song Thrush,Thrushes,Passeriformes
 Mistle Thrush,Thrushes,Passeriformes
-Starling,Starlings,Passeriformes
 Collared Dove,Columbidae,Columbiformes
 Woodpigeon,Columbidae,Columbiformes
 Long-tailed Tit,Bushtits,Passeriformes
@@ -63,3 +62,9 @@ Greater Roadrunner,Cuckoos,Cuculiformes
 Little Penguin,Spheniscidae,Sphenisciformes
 Rainbow Lorikeet,Psittaculidae,Psittaciformes
 Screaming Piha,Cotingas,Passeriformes
+Greater Honeyguide,Honeyguides,Piciformes
+Chicken,Phasianidae,Galliformes
+Turkey,Phasianidae,Galliformes
+Rock Dove,Columbidae,Columbiformes
+Arctic Tern,Laridae,Charadriiformes
+Northern Cardinal,Cardinalidae,Passeriformes

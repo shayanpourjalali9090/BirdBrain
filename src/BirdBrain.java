@@ -12,8 +12,8 @@ public class BirdBrain {
     static class MultipleChoiceBox{
         JRadioButton[] opts=new JRadioButton[4];
         ButtonGroup group=new ButtonGroup();
-        int i=0;
-        Font font=null;
+        int i;
+        Font font;
 
         public MultipleChoiceBox(){}
 
@@ -66,6 +66,12 @@ public class BirdBrain {
 
     static QuizType quizType;
 
+    public static Image getBirdImage(Bird bird, int scale){
+        Image birdImage=new ImageIcon(BirdBrain.class.getResource(String.format("/images/%s",bird.species))).getImage();
+        birdImage=birdImage.getScaledInstance(-1,scale,Image.SCALE_SMOOTH);
+        return birdImage;
+    }
+
     public static void initResources(){
         try {
             BufferedReader reader=new BufferedReader(new InputStreamReader(BirdBrain.class.getResourceAsStream("/birds.txt")));
@@ -101,6 +107,7 @@ public class BirdBrain {
 
     public static void createQuizLengthDialog(QuizType type){
         JDialog dialog=new JDialog();
+        dialog.setIconImage(logo);
         dialog.setBackground(titleBG);
         dialog.setSize(550,300);
         dialog.setVisible(true);
@@ -123,6 +130,7 @@ public class BirdBrain {
 
         JButton submitButton=new JButton("Submit");
         submitButton.setFont(flyingBirdFontSmall);
+        submitButton.setBackground(buttonBG);
         submitButton.addActionListener(e->{
             int value=(Integer)comboBox.getSelectedItem();
             dialog.dispose();
@@ -193,14 +201,99 @@ public class BirdBrain {
 
     }
 
+    private static JPanel createQuestionReviewPanel(Question question){
+        JPanel panel=new JPanel();
+        panel.setLayout(new GridLayout(1,3));
+        panel.setBackground(question.correct?Color.GREEN:Color.RED);
+
+        String birdName=question.bird.species;
+        Image birdImage=getBirdImage(question.bird,150);
+        JLabel imageLabel=new JLabel(new ImageIcon(birdImage));
+
+        JLabel userAnswerLabel=new JLabel(question.userAnswer);
+        userAnswerLabel.setFont(flyingBirdFontSmall);
+
+        JLabel correctAnswerLabel=new JLabel(question.correctAnswer);
+        correctAnswerLabel.setFont(flyingBirdFontSmall);
+
+
+        panel.add(imageLabel);
+        panel.add(userAnswerLabel);
+        panel.add(correctAnswerLabel);
+
+        return panel;
+    }
+
     public static void finishQuiz(){
         int correct=0;
-        for (Question q:questions){
-            correct+=q.mark()?1:0;
+
+        JDialog dialog=new JDialog();
+        dialog.setIconImage(logo);
+        dialog.setSize(1000,900);
+        dialog.setTitle("Quiz Review");
+        dialog.setBackground(titleBG);
+
+        JPanel mainPanel=new JPanel();
+        mainPanel.setLayout(new BoxLayout(mainPanel,BoxLayout.Y_AXIS));
+        mainPanel.setBackground(titleBG);
+
+        JPanel headerPanel = createHeaderPanel();
+
+        mainPanel.add(headerPanel);
+        mainPanel.add(Box.createVerticalStrut(50));
+
+        for (Question question:questions){
+            question.mark();
+            if (question.correct)correct++;
+
+            JPanel questionReviewPanel=createQuestionReviewPanel(question);
+            mainPanel.add(questionReviewPanel);
+            mainPanel.add(Box.createVerticalStrut(25));
         }
-        JOptionPane.showMessageDialog(frame,String.format("You got %d/%d questions correct",correct,questionCount));
+
+        JScrollPane scrollPane=new JScrollPane(mainPanel);
+        scrollPane.getVerticalScrollBar().setUnitIncrement(16);
+
+        JLabel topLabel=new JLabel(String.format("You got %d/%d questions correct!",correct,questionCount));
+        topLabel.setFont(flyingBirdFontBig);
+        topLabel.setBackground(titleBG);
+
+        JButton doneButton=new JButton("Done");
+        doneButton.setFont(flyingBirdFontSmall);
+        doneButton.setBackground(buttonBG);
+        doneButton.addActionListener(e->{
+            dialog.dispose();
+        });
+
+        dialog.add(topLabel,BorderLayout.NORTH);
+        dialog.add(scrollPane,BorderLayout.CENTER);
+        dialog.add(doneButton,BorderLayout.SOUTH);
+
+        dialog.setVisible(true);
+
         cardLayout.show(screens,"mainMenu");
 
+    }
+
+    private static JPanel createHeaderPanel() {
+        JPanel headerPanel=new JPanel();
+        headerPanel.setLayout(new GridLayout(1,3));
+        headerPanel.setBackground(titleBG);
+
+        JLabel birdLabel=new JLabel("Bird:");
+        birdLabel.setFont(flyingBirdFontSmall);
+
+        JLabel userAnswerLabel=new JLabel("Your answer:");
+        userAnswerLabel.setFont(flyingBirdFontSmall);
+
+        JLabel correctAnswerLabel=new JLabel("Correct answer:");
+        correctAnswerLabel.setFont(flyingBirdFontSmall);
+
+        headerPanel.add(birdLabel);
+        headerPanel.add(userAnswerLabel);
+        headerPanel.add(correctAnswerLabel);
+
+        return headerPanel;
     }
 
     public static String capitalise(String str){
@@ -362,7 +455,7 @@ public class BirdBrain {
         questionNumberLabel.setFont(flyingBirdFontBig);
         questionNumberLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        nextQuestionButton.setFont(flyingBirdFontSmall);
+        nextQuestionButton.setFont(flyingBirdFontBig);
         nextQuestionButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         nextQuestionButton.setBackground(Color.WHITE);
 
@@ -390,7 +483,7 @@ public class BirdBrain {
         screens.add(mainMenuPanel, "mainMenu");
         screens.add(quizPanel,"quiz");
 
-        frame.setSize(1000,800);
+        frame.setSize(1000,900);
         frame.setIconImage(logo);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(screens);
